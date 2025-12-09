@@ -1,7 +1,7 @@
 /* ===== SETTINGS FOR THE WHOLE VISIBLE PAGE ===== */
 body {
     background-color: #393535; /* Dark background to make the header stand out */
-    margin: 0;
+    margin: 0; /* Ensures the webpage fits the entire viewport/overides default browser styling */
     font-family: Arial, sans-serif; /* Font family for the whole page */
 }
 
@@ -58,7 +58,10 @@ body {
 
 /* ICON TEMPLATE */
 .header-main-sm-fb,
-.header-main-sm-in {
+.header-main-sm-in,
+.header-main-sm-ln,
+.header-main-sm-x,
+.header-main-sm-tk {
     width: 32px;
     height: 32px;
     display: inline-block;       /* makes <a> behave like a box */
@@ -77,7 +80,10 @@ body {
 
 /* HOVER REMOVES GRAYSCALE */
 .header-main-sm-fb:hover,
-.header-main-sm-in:hover {
+.header-main-sm-in:hover,
+.header-main-sm-ln:hover,
+.header-main-sm-x:hover,
+.header-main-sm-tk:hover {
     filter: grayscale(0);
 }
 
@@ -87,6 +93,18 @@ body {
 
 .header-main-sm-in {
     background-image: url(../img/insta.jpeg);
+}
+
+.header-main-sm-ln {
+    background-image: url(../img/linkedln.png);
+}
+
+.header-main-sm-x {
+    background-image: url(../img/x.png);
+}
+
+.header-main-sm-tk {
+    background-image: url(../img/tk.png);
 }
 
 /* ===== HAMBURGER MENU This appears only on mobile screens ===== */
@@ -119,4 +137,28 @@ body {
     .header-main-nav {
         display: none;
     }
+}
+
+a {
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 26px;
+    line-height: 32px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 13px;
+    line-height: 18px;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
