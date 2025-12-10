@@ -1,3 +1,6 @@
+/* -------------------------------------------------
+   FOOTER (unchanged except minor cleanup)
+--------------------------------------------------- */
 
 .footer-main {
     width: 100%;
@@ -15,7 +18,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
- 
 }
 
 .footer-testemoni {
@@ -38,51 +40,39 @@
 .gtouch {
     display: flex;
     padding: 10px;
-    margin: 20px;
-    border: 4px solid rgb(93, 232, 28) ;
+    margin: 20px auto;
+    border: 4px solid rgb(93, 232, 28);
     font-weight: 900;
 }
- .footer-sitemap {
+
+.footer-sitemap {
     flex-basis: 100%;
     display: flex;
- }
+    gap: 40px;
+}
 
- .footer-sitemap ul{
+.footer-sitemap ul {
     list-style: none;
- }
+}
 
- .footer-sitemap ul:nth-child(1) {
+.footer-sitemap ul:nth-child(1) {
     border-left: 4px solid goldenrod;
     padding-left: 20px;
- }
+}
 
-  .footer-sitemap ul:nth-child(2) {
-    padding-left: 50px;
-    flex-basis: 340px;
- }
+.footer-sitemap p {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: cursive;
+    margin-right: 30px;
+}
 
-  .footer-sitemap ul:nth-child(3) {
-    display: flex;
- }
-
-  .footer-sitemap p{
-     text-transform: uppercase;
-     text-align: center;
-     margin-right: 50px;
-     font-family:cursive;
- }
-
-   .footer-sitemap ul:nth-child(4) {
-     display: flex;
-     flex-wrap: nowrap;
-     flex-direction: column;
- }
-
- .copyright {
+.copyright {
     display: flex;
     justify-content: center;
     width: 100%;
     color: aqua;
     background-color: #231895;
     font-weight: 900;
- }
+    padding: 10px 0;
+}
