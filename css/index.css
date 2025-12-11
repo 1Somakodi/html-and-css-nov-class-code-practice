@@ -14,9 +14,8 @@ main {
     background-repeat: no-repeat;
 
     /* bottom line */
-    border-bottom: 6px solid rgb(109, 22, 91);
+    border-bottom: 36px solid rgb(109, 22, 91);
 }
-
 
 /* Left text section */
 .main-left {
@@ -72,9 +71,9 @@ main {
 }
 
 .main-center img {
-    height: 100%;      /* FULL HEIGHT OF HERO */
-    width: auto;       /* Maintain aspect ratio */
-    object-fit: cover; /* Perfect scaling */
+    height: 100%; 
+    width: auto;
+    object-fit: cover;
 }
 
 /* Right Quote */
@@ -103,52 +102,147 @@ main .hero-quotes {
     border-radius: 4px;
 }
 
-/* Categories styling */
+/* ----------------------------- */
+/*      CATEGORIES SECTION       */
+/* ----------------------------- */
 
 .index-category {
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 60px;
+    padding: 40px 0 60px;
     background-color: #fff;
     display: flex;
     justify-content: center;
-    column-gap: 20px;
+    gap: 30px;
 }
 
+.index-category-wrapper {
+    text-align: center;
+    width: 240px;
+}
+
+/* Title above image */
+.index-category-wrapper h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+/* Image box */
 .index-category-box {
     width: 240px;
     height: 240px;
-    background-color: #ff3ea5;
-
-}
-
-.index-category-box h3 {
-    font-size: 18px;
-    line-height: 24px;
-    color: white;
-}
-
-.index-category-box:nth-child(1) {
-    background-image: url(../img/cat10.jpg);
-}
-
-.index-category-box:nth-child(2) {
-    background-image: url(../img/cat30.jpg);
-}
-
-.index-category-box:nth-child(3) {
-    background-image: url(../img/cat30.jpg);
-}
-
-.index-category-box:nth-child(4) {
-    background-image: url(../img/cat40.jpg);
-}
-
-.index-category-box:nth-child(1),
-.index-category-box:nth-child(2), 
-.index-category-box:nth-child(3), 
-.index-category-box:nth-child(4) {
+    border-radius: 8px;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    margin-bottom: 12px; /* Space above button */
+}
+
+/* Assign images */
+.box1 { background-image: url(../img/cat10.jpg); }
+.box2 { background-image: url(../img/cat20.png); }
+.box3 { background-image: url(../img/cat30.jpg); }
+.box4 { background-image: url(../img/cat40.jpg); }
+
+/* Button BELOW image */
+.cat-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff3ea5;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.cat-btn:hover {
+    background: #ff69c5;
+}
+
+/* -------------------------------------------------
+   ABOUT ME SECTION — clean & modern
+--------------------------------------------------- */
+
+.about-section {
+    width: 100%;
+    padding: 60px 0;
+    background: #f6f2f7;
+    display: flex;
+    justify-content: center;
+}
+
+.about-wrapper {
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* IMAGE */
+.about-image {
+    flex: 1;
+    min-width: 250px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 6px solid #bd4ea5;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+/* CONTENT */
+.about-content {
+    flex: 2;
+    min-width: 280px;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #bd4ea5;
+    font-weight: 900;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* BUTTON */
+.about-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #ff3ea5;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.about-btn:hover {
+    background: #ff6dc7;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .about-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 280px;
+    }
 }

@@ -1,78 +1,144 @@
-/* -------------------------------------------------
-   FOOTER (unchanged except minor cleanup)
---------------------------------------------------- */
+/*    FOOTER  */
 
 .footer-main {
     width: 100%;
-    padding: 60px 0 20px;
-    background-color: #141414;
-    color: #ffffff;
+    padding: 40px 0 20px;
+    background-color: #bd4ea5;
+    color: #eee;
+    font-size: 14px;
+    margin-top: 40px;
 }
 
 .wrapper-main {
-    width: 1100px;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .footer-main-flex {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 25px;
 }
 
+/* TESTIMONIAL CARDS */
 .footer-testemoni {
-    flex-basis: 20%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex: 1;
+    min-width: 160px;
+    max-width: 300px;
+    background: #1a1a1a;
+    padding: 14px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #333;
 }
 
 .footer-testemoni img {
-    width: 60%;
-    border-radius: 30%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #bd4ea5;
 }
 
 .footer-testemoni p {
-    text-align: center;
-    padding: 20px 20px 0;
+    font-size: 12px;
+    color: #ccc;
+    line-height: 1.45;
 }
 
-.gtouch {
-    display: flex;
-    padding: 10px;
-    margin: 20px auto;
-    border: 4px solid rgb(93, 232, 28);
-    font-weight: 900;
-}
-
+/*   SITEMAP SECTION */
 .footer-sitemap {
     flex-basis: 100%;
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    padding-top: 25px;
+    border-top: 1px solid #8c2f76;
+    margin-top: 20px;
 }
 
 .footer-sitemap ul {
     list-style: none;
+    padding-left: 0;
+}
+
+.footer-sitemap ul li {
+    margin-bottom: 10px;
 }
 
 .footer-sitemap ul:nth-child(1) {
-    border-left: 4px solid goldenrod;
-    padding-left: 20px;
+    border-left: 4px solid #ff3ea5;
+    padding-left: 14px;
 }
 
-.footer-sitemap p {
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    font-family: cursive;
-    margin-right: 30px;
+.footer-sitemap a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s ease;
 }
 
+.footer-sitemap a:hover {
+    color: #ff3ea5;
+    padding-left: 4px;
+}
+
+/*    CONTACT BUTTON IN FOOTER */
+.cat-btn {
+    align-self: flex-start;
+    background: #ff3ea5;
+    padding: 10px 22px;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+.cat-btn:hover {
+    background: #ff69c5;
+}
+
+/*   COPYRIGHT */
 .copyright {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    color: aqua;
-    background-color: #231895;
-    font-weight: 900;
-    padding: 10px 0;
+    text-align: center;
+    color: #ddd;
+    background-color: #451d1d;
+    padding: 12px 0;
+    margin-top: 30px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+/*    RESPONSIVE */
+@media (max-width: 900px) {
+    .footer-main-flex {
+        justify-content: center;
+    }
+
+    .footer-testemoni {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-sitemap {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .footer-testemoni {
+        max-width: 100%;
+    }
+
+    .cat-btn {
+        margin: 10px 0 0;
+    }
 }
